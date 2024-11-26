@@ -163,7 +163,7 @@ function SpawnCacheMarkers(map: leaflet.Map, board: Board) {
       const cell = cacheKey.split(",").map(Number);
       const geocache = new Geocache(cell[0], cell[1], 0);
       geocache.fromMomento(cacheState[cacheKey]);
-      cacheState[cacheKey] = geocache.toMomento();
+      cacheState[cacheKey] = geocache.toMomento(); //hello
     }
   }
 }
